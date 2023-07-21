@@ -4,7 +4,7 @@
 			<div class="row">
 				<div class="col-sm-12">
 					<div class="col-sm-10 col-sm-offset-1 text-center">
-						<div class="four-zero-four-bg">
+						<div class="four-zero-four-bg" :style="{ 'background-image': 'url(' + image + ')' }">
 							<h1 class="text-center">404</h1>
 						</div>
 
@@ -22,6 +22,10 @@
 	</section>
 </template>
 
+<script lang="ts" setup>
+const image = 'https://cdn.svgator.com/images/2022/01/funny-404-error-page-design.gif'
+</script>
+
 <style>
 .page-404 {
 	padding: 40px 0;
@@ -34,7 +38,6 @@
 }
 
 .four-zero-four-bg {
-	background-image: url('https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble-1.gif');
 	height: 400px;
 	background-position: center;
 }
