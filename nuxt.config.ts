@@ -19,4 +19,7 @@ export default defineNuxtConfig({
 			config?.plugins?.push(vuetify())
 		},
 	},
+	dir: {
+		middleware: './middleware/',
+	},
 })
